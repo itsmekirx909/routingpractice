@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+.navbar{
+padding: 4px 10px;
+display: flex;
+align-items: center;
 }
 
 .App-logo {
@@ -35,4 +37,157 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.links{
+  text-decoration: none !important;
+  margin: 0px 10px;
+}
+
+
+.logsig{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  backdrop-filter: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.body{
+  margin: 0 !important;
+background: #61dafb;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hea{
+  color: white;
+}
+
+.inps{
+  margin: 10px 4px !important;
+  width: 300px !important;
+}
+
+.inps2{
+  margin: 10px 4px !important;
+  width: 500px !important;
+}
+
+.sign{
+  cursor: pointer;
+}
+.sign:hover{
+  color: #7f8081;
+}
+
+.whitelabel{
+  color: white !important;
+}
+
+.borders{
+  border: 1px solid white !important;
+}
+
+.bods{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bods2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hove{
+  transition: 1s !important;
+  cursor: pointer;
+}
+.hove:hover{
+  scale: 1.2;
+  z-index: 10 !important;
+}
+
+/* check  */
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes scale {
+
+  0%,
+  100% {
+    transform: none
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1)
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142
+  }
+}
+/* check end */
+
+.navhome{
+  background-image: url(./components/imgs/pic1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
